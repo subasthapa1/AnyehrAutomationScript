@@ -20,10 +20,10 @@ public class LoginCase {
 	        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
 	        driver.get("http://emr.anyehr.com/cms/login");
-
+          
 	    }	
 	   
-  @Test(priority=1)
+  @Test(priority=2)
   public void loginUsingValidUser() {
 	  page = new LoginPage(driver);
 	  page.doLogin("superqa", "superqa@123");
@@ -33,7 +33,7 @@ public class LoginCase {
 	  page = new LoginPage(driver);
 	  page.doLogin("superqas", "superqa@1234");
   }
-  @Test(priority=2)
+  @Test(priority=1)
   public void loginUsingBlankUser() {
 	  page = new LoginPage(driver);
 	  page.doLogin("superqas", "superqa@1234");

@@ -9,20 +9,18 @@ public class LoginPage {
 	By passwd = By.name("password");
 	By btn = By.xpath("//button[@type='submit']");
 	
-	public LoginPage(WebDriver driver)
-	{
+	public LoginPage(WebDriver driver){
 		this.driver= driver;
-	
 	}
 	
 	public void setUsername(String strUsername)
 	{
-		driver.findElement(usrName).clear();
+		//driver.findElement(usrName).clear();
 		driver.findElement(usrName).sendKeys(strUsername);
 	}
 	public void setPassword(String strPassword)
 	{
-		driver.findElement(passwd).clear();
+		//driver.findElement(passwd).clear();
 		driver.findElement(passwd).sendKeys(strPassword);
 	}
 	
@@ -36,6 +34,7 @@ public class LoginPage {
 		this.setUsername(strUsername);
 		this.setPassword(strPassword);
 		this.clickButton();
+		
 	}
 	
 
