@@ -1,24 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="42336" started-at="2017-01-25T08:03:16Z" finished-at="2017-01-25T08:03:58Z">
+  <suite name="Default suite" duration-ms="24826" started-at="2017-01-25T09:47:34Z" finished-at="2017-01-25T09:47:59Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="42336" started-at="2017-01-25T08:03:16Z" finished-at="2017-01-25T08:03:58Z">
+    <test name="Default test" duration-ms="24826" started-at="2017-01-25T09:47:34Z" finished-at="2017-01-25T09:47:59Z">
       <class name="ekbana.LoginCase">
-        <test-method status="PASS" signature="setup()[pri:0, instance:ekbana.LoginCase@62ee68d8]" name="setup" is-config="true" duration-ms="39108" started-at="2017-01-25T13:48:16Z" finished-at="2017-01-25T13:48:55Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:ekbana.LoginCase@62ee68d8]" name="setup" is-config="true" duration-ms="19762" started-at="2017-01-25T15:32:34Z" finished-at="2017-01-25T15:32:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="loginUsingInvalidUser()[pri:0, instance:ekbana.LoginCase@62ee68d8]" name="loginUsingInvalidUser" duration-ms="2067" started-at="2017-01-25T13:48:55Z" finished-at="2017-01-25T13:48:57Z">
+        <test-method status="PASS" signature="loginUsingInvalidUser()[pri:0, instance:ekbana.LoginCase@62ee68d8]" name="loginUsingInvalidUser" duration-ms="2518" started-at="2017-01-25T15:32:54Z" finished-at="2017-01-25T15:32:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginUsingInvalidUser -->
-        <test-method status="PASS" signature="loginUsingValidUser()[pri:1, instance:ekbana.LoginCase@62ee68d8]" name="loginUsingValidUser" duration-ms="1097" started-at="2017-01-25T13:48:57Z" finished-at="2017-01-25T13:48:58Z">
+        <test-method status="PASS" signature="loginUsingValidUser()[pri:1, instance:ekbana.LoginCase@62ee68d8]" name="loginUsingValidUser" duration-ms="1291" started-at="2017-01-25T15:32:56Z" finished-at="2017-01-25T15:32:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginUsingValidUser -->
+        <test-method status="PASS" signature="loginUsingBlankUser()[pri:2, instance:ekbana.LoginCase@62ee68d8]" name="loginUsingBlankUser" duration-ms="1155" started-at="2017-01-25T15:32:58Z" finished-at="2017-01-25T15:32:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginUsingBlankUser -->
       </class> <!-- ekbana.LoginCase -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

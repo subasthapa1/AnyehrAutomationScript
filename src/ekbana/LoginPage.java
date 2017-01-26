@@ -37,5 +37,6 @@ public class LoginPage {
 		this.setPassword(strPassword);
 		this.clickButton();
 	}
+	
 
 }
