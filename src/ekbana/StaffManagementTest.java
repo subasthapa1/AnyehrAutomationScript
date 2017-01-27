@@ -41,9 +41,9 @@ public class StaffManagementTest {
 		 LoginPage lgin =new LoginPage(driver);
 		
 	        lgin.doLogin("superqa", "superqa@123");
-	        //driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	        driver.manage().timeouts().implicitlyWait(180, TimeUnit.SECONDS);
 
-	        driver.navigate().to("http://emr.anyehr.com/cms/staff/pages/staffmanagement");
+	       driver.navigate().to("http://emr.anyehr.com/cms/staff/pages/staffmanagement");
 	   }
 	 @Test(priority=2)
 	 public void searchStaff()

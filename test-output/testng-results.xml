@@ -2,41 +2,39 @@
 <testng-results skipped="0" failed="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="43112" started-at="2017-01-26T11:20:54Z" finished-at="2017-01-26T11:21:37Z">
+  <suite name="Default suite" duration-ms="45169" started-at="2017-01-27T05:28:51Z" finished-at="2017-01-27T05:29:36Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="43112" started-at="2017-01-26T11:20:54Z" finished-at="2017-01-26T11:21:37Z">
+    <test name="Default test" duration-ms="45169" started-at="2017-01-27T05:28:51Z" finished-at="2017-01-27T05:29:36Z">
       <class name="ekbana.StaffManagementTest">
-        <test-method status="PASS" signature="install()[pri:0, instance:ekbana.StaffManagementTest@58651fd0]" name="install" is-config="true" duration-ms="29636" started-at="2017-01-26T17:05:54Z" finished-at="2017-01-26T17:06:23Z">
+        <test-method status="PASS" signature="install()[pri:0, instance:ekbana.StaffManagementTest@58651fd0]" name="install" is-config="true" duration-ms="34904" started-at="2017-01-27T11:13:51Z" finished-at="2017-01-27T11:14:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- install -->
-        <test-method status="PASS" signature="setup()[pri:1, instance:ekbana.StaffManagementTest@58651fd0]" name="setup" duration-ms="3289" started-at="2017-01-26T17:06:23Z" finished-at="2017-01-26T17:06:27Z">
+        <test-method status="PASS" signature="setup()[pri:1, instance:ekbana.StaffManagementTest@58651fd0]" name="setup" duration-ms="3743" started-at="2017-01-27T11:14:26Z" finished-at="2017-01-27T11:14:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="searchStaff()[pri:2, instance:ekbana.StaffManagementTest@58651fd0]" name="searchStaff" duration-ms="10102" started-at="2017-01-26T17:06:27Z" finished-at="2017-01-26T17:06:37Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method status="FAIL" signature="searchStaff()[pri:2, instance:ekbana.StaffManagementTest@58651fd0]" name="searchStaff" duration-ms="6441" started-at="2017-01-27T11:14:30Z" finished-at="2017-01-27T11:14:36Z">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[Unable to locate element: *[name='filter'] (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 10.08 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[Failed to decode response from marionette (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 6.41 seconds
 Build info: version: 'unknown', revision: '2aa21c1', time: '2016-08-02 14:59:43 -0700'
 System info: host: 'EKBANA16', ip: '192.168.56.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_101'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, appBuildId=20161208153507, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, processId=6504, browserVersion=50.1.0, platformVersion=6.3, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=windows_nt}]
-Session ID: 09925b64-921b-466c-ba14-da0c940957d5
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, appBuildId=20161208153507, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, processId=8460, browserVersion=50.1.0, platformVersion=6.3, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=windows_nt}]
+Session ID: c136f544-e731-4b35-b9a8-cc73f9008b27
 *** Element info: {Using=css selector, value=*[name='filter']}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: *[name='filter'] (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 10.08 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[org.openqa.selenium.WebDriverException: Failed to decode response from marionette (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 6.41 seconds
 Build info: version: 'unknown', revision: '2aa21c1', time: '2016-08-02 14:59:43 -0700'
 System info: host: 'EKBANA16', ip: '192.168.56.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_101'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, appBuildId=20161208153507, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, processId=6504, browserVersion=50.1.0, platformVersion=6.3, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=windows_nt}]
-Session ID: 09925b64-921b-466c-ba14-da0c940957d5
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, appBuildId=20161208153507, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, processId=8460, browserVersion=50.1.0, platformVersion=6.3, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=windows_nt}]
+Session ID: c136f544-e731-4b35-b9a8-cc73f9008b27
 *** Element info: {Using=css selector, value=*[name='filter']}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -79,7 +77,7 @@ Session ID: 09925b64-921b-466c-ba14-da0c940957d5
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchStaff -->
