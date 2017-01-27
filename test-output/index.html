@@ -48,7 +48,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\subas\AppData\Local\Temp\testng-eclipse--1633362972\testng-customsuite.xml</span>
+                    <span>C:\Users\subas\AppData\Local\Temp\testng-eclipse--202919186\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -101,7 +101,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="ekbana.StaffManagementTest" hash-for-method="searchStaff">searchStaff</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="ekbana.LoginCase" hash-for-method="loginUsingValidUser">loginUsingValidUser</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -115,7 +115,12 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="ekbana.StaffManagementTest" hash-for-method="setup">setup</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="ekbana.LoginCase" hash-for-method="loginUsingBlankUser">loginUsingBlankUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="ekbana.LoginCase" hash-for-method="loginUsingInvalidUser">loginUsingInvalidUser</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -133,22 +138,22 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">ekbana.StaffManagementTest</span>
+              <span class="class-name">ekbana.LoginCase</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="searchStaff">
-                  </a> <!-- searchStaff -->
-                  <span class="method-name">searchStaff</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Failed to decode response from marionette (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 6.41 seconds
+                  <a name="loginUsingValidUser">
+                  </a> <!-- loginUsingValidUser -->
+                  <span class="method-name">loginUsingValidUser</span>
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: The element reference is stale. Either the element is no longer attached to the DOM or the page has been refreshed. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 86 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
 Build info: version: &apos;unknown&apos;, revision: &apos;2aa21c1&apos;, time: &apos;2016-08-02 14:59:43 -0700&apos;
 System info: host: &apos;EKBANA16&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_101&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, appBuildId=20161208153507, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, processId=8460, browserVersion=50.1.0, platformVersion=6.3, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=windows_nt}]
-Session ID: c136f544-e731-4b35-b9a8-cc73f9008b27
-*** Element info: {Using=css selector, value=*[name=&apos;filter&apos;]}
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, appBuildId=20161208153507, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, processId=8764, browserVersion=50.1.0, platformVersion=6.3, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=windows_nt}]
+Session ID: 581d7cd3-6cf0-4cf4-af72-7fd6f6db1dca
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -156,14 +161,11 @@ Session ID: c136f544-e731-4b35-b9a8-cc73f9008b27
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:683)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:498)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:473)
-	at org.openqa.selenium.By$ByName.findElement(By.java:303)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:369)
-	at ekbana.StaffManagementPage.setRole(StaffManagementPage.java:25)
-	at ekbana.StaffManagementPage.searchStaff(StaffManagementPage.java:40)
-	at ekbana.StaffManagementTest.searchStaff(StaffManagementTest.java:52)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:319)
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:140)
+	at ekbana.LoginPage.setPassword(LoginPage.java:23)
+	at ekbana.LoginPage.doLogin(LoginPage.java:35)
+	at ekbana.LoginCase.loginUsingValidUser(LoginCase.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -197,14 +199,21 @@ Session ID: c136f544-e731-4b35-b9a8-cc73f9008b27
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">ekbana.StaffManagementTest</span>
+              <span class="class-name">ekbana.LoginCase</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="setup">
-                  </a> <!-- setup -->
-                  <span class="method-name">setup</span>
+                  <a name="loginUsingBlankUser">
+                  </a> <!-- loginUsingBlankUser -->
+                  <span class="method-name">loginUsingBlankUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginUsingInvalidUser">
+                  </a> <!-- loginUsingInvalidUser -->
+                  <span class="method-name">loginUsingInvalidUser</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -212,7 +221,7 @@ Session ID: c136f544-e731-4b35-b9a8-cc73f9008b27
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\subas\AppData\Local\Temp\testng-eclipse--1633362972\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\subas\AppData\Local\Temp\testng-eclipse--202919186\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -221,7 +230,7 @@ Session ID: c136f544-e731-4b35-b9a8-cc73f9008b27
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;ekbana.StaffManagementTest&quot;/&gt;
+      &lt;class name=&quot;ekbana.LoginCase&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -261,20 +270,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'searchStaff')
-data.setCell(0, 2, 'ekbana.StaffManagementTest')
-data.setCell(0, 3, 6441);
+data.setCell(0, 1, 'loginUsingBlankUser')
+data.setCell(0, 2, 'ekbana.LoginCase')
+data.setCell(0, 3, 2124);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'setup')
-data.setCell(1, 2, 'ekbana.StaffManagementTest')
-data.setCell(1, 3, 3743);
+data.setCell(1, 1, 'loginUsingInvalidUser')
+data.setCell(1, 2, 'ekbana.LoginCase')
+data.setCell(1, 3, 1417);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'loginUsingValidUser')
+data.setCell(2, 2, 'ekbana.LoginCase')
+data.setCell(2, 3, 1128);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 10 seconds</span>
+              <span class="suite-total-time">Total running time: 4 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -300,20 +313,24 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">ekbana.StaffManagementTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">ekbana.LoginCase</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <span class="method-name">install</span>
+                <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <span class="method-name">setup</span>
-                <span class="method-start">34931 ms</span>
+                <span class="method-name">loginUsingInvalidUser</span>
+                <span class="method-start">17607 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginUsingBlankUser</span>
+                <span class="method-start">19033 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">searchStaff</span>
-                <span class="method-start">38684 ms</span>
+                <span class="method-name">loginUsingValidUser</span>
+                <span class="method-start">21164 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

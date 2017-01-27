@@ -1,8 +1,10 @@
 package ekbana;
 
-import java.util.concurrent.TimeUnit;
+
+
 
 import org.openqa.selenium.WebDriver;
+
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -12,13 +14,14 @@ public class StaffManagementTest {
 	LoginPage lgin;
 	LoginCase lgcs;
 	StaffManagementPage pg;
+	//WebDriverWait wait = new WebDriverWait(driver,20);
 	
 	@BeforeTest
 	public void install()
 	{
 		 driver = new FirefoxDriver();
 
-	        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	       // driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
 	        driver.get("http://emr.anyehr.com/cms/login");
 	        
@@ -41,9 +44,9 @@ public class StaffManagementTest {
 		 LoginPage lgin =new LoginPage(driver);
 		
 	        lgin.doLogin("superqa", "superqa@123");
-	        driver.manage().timeouts().implicitlyWait(180, TimeUnit.SECONDS);
+	// wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div[2]/div[1]/div/div/div/div/div/div/div/div[1]/div/div/form/div[5]/button")));
 
-	       driver.navigate().to("http://emr.anyehr.com/cms/staff/pages/staffmanagement");
+	     //  driver.navigate().to("http://emr.anyehr.com/cms/staff/pages/staffmanagement");
 	   }
 	 @Test(priority=2)
 	 public void searchStaff()

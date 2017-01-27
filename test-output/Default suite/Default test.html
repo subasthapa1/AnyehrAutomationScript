@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Jan 27 11:13:51 NPT 2017</td>
+<td>Started on:</td><td>Fri Jan 27 13:40:35 NPT 2017</td>
 </tr>
-<tr><td>Total time:</td><td>45 seconds (45169 ms)</td>
+<tr><td>Total time:</td><td>22 seconds (22359 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,15 +75,15 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='ekbana.StaffManagementTest.searchStaff()'><b>searchStaff</b><br>Test class: ekbana.StaffManagementTest</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: Failed to decode response from marionette (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 6.41 seconds
+<td title='ekbana.LoginCase.loginUsingValidUser()'><b>loginUsingValidUser</b><br>Test class: ekbana.LoginCase</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: The element reference is stale. Either the element is no longer attached to the DOM or the page has been refreshed. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 86 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
 Build info: version: &apos;unknown&apos;, revision: &apos;2aa21c1&apos;, time: &apos;2016-08-02 14:59:43 -0700&apos;
 System info: host: &apos;EKBANA16&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_101&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, appBuildId=20161208153507, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, processId=8460, browserVersion=50.1.0, platformVersion=6.3, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=windows_nt}]
-Session ID: c136f544-e731-4b35-b9a8-cc73f9008b27
-*** Element info: {Using=css selector, value=*[name=&apos;filter&apos;]}
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, appBuildId=20161208153507, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, processId=8764, browserVersion=50.1.0, platformVersion=6.3, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=windows_nt}]
+Session ID: 581d7cd3-6cf0-4cf4-af72-7fd6f6db1dca
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -91,14 +91,11 @@ Session ID: c136f544-e731-4b35-b9a8-cc73f9008b27
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:683)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:498)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:473)
-	at org.openqa.selenium.By$ByName.findElement(By.java:303)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:369)
-	at ekbana.StaffManagementPage.setRole(StaffManagementPage.java:25)
-	at ekbana.StaffManagementPage.searchStaff(StaffManagementPage.java:40)
-	at ekbana.StaffManagementTest.searchStaff(StaffManagementTest.java:52)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:319)
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:140)
+	at ekbana.LoginPage.setPassword(LoginPage.java:23)
+	at ekbana.LoginPage.doLogin(LoginPage.java:35)
+	at ekbana.LoginCase.loginUsingValidUser(LoginCase.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -123,15 +120,15 @@ Session ID: c136f544-e731-4b35-b9a8-cc73f9008b27
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
-</pre></div><a href='#' onClick='toggleBox("stack-trace285133380", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace285133380'><pre>org.openqa.selenium.WebDriverException: Failed to decode response from marionette (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 6.41 seconds
+</pre></div><a href='#' onClick='toggleBox("stack-trace1237825806", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1237825806'><pre>org.openqa.selenium.StaleElementReferenceException: The element reference is stale. Either the element is no longer attached to the DOM or the page has been refreshed. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 86 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
 Build info: version: &apos;unknown&apos;, revision: &apos;2aa21c1&apos;, time: &apos;2016-08-02 14:59:43 -0700&apos;
 System info: host: &apos;EKBANA16&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_101&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, appBuildId=20161208153507, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, processId=8460, browserVersion=50.1.0, platformVersion=6.3, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=windows_nt}]
-Session ID: c136f544-e731-4b35-b9a8-cc73f9008b27
-*** Element info: {Using=css selector, value=*[name=&apos;filter&apos;]}
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, appBuildId=20161208153507, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, processId=8764, browserVersion=50.1.0, platformVersion=6.3, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=windows_nt}]
+Session ID: 581d7cd3-6cf0-4cf4-af72-7fd6f6db1dca
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -139,14 +136,11 @@ Session ID: c136f544-e731-4b35-b9a8-cc73f9008b27
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:683)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:498)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:473)
-	at org.openqa.selenium.By$ByName.findElement(By.java:303)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:369)
-	at ekbana.StaffManagementPage.setRole(StaffManagementPage.java:25)
-	at ekbana.StaffManagementPage.searchStaff(StaffManagementPage.java:40)
-	at ekbana.StaffManagementTest.searchStaff(StaffManagementTest.java:52)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:319)
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:140)
+	at ekbana.LoginPage.setPassword(LoginPage.java:23)
+	at ekbana.LoginPage.doLogin(LoginPage.java:35)
+	at ekbana.LoginCase.loginUsingValidUser(LoginCase.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -172,8 +166,8 @@ Session ID: c136f544-e731-4b35-b9a8-cc73f9008b27
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
 </pre></div></td>
-<td>6</td>
-<td>ekbana.StaffManagementTest@58651fd0</td></tr>
+<td>1</td>
+<td>ekbana.LoginCase@62ee68d8</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -183,10 +177,15 @@ Session ID: c136f544-e731-4b35-b9a8-cc73f9008b27
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='ekbana.StaffManagementTest.setup()'><b>setup</b><br>Test class: ekbana.StaffManagementTest</td>
+<td title='ekbana.LoginCase.loginUsingBlankUser()'><b>loginUsingBlankUser</b><br>Test class: ekbana.LoginCase</td>
 <td></td>
-<td>3</td>
-<td>ekbana.StaffManagementTest@58651fd0</td></tr>
+<td>2</td>
+<td>ekbana.LoginCase@62ee68d8</td></tr>
+<tr>
+<td title='ekbana.LoginCase.loginUsingInvalidUser()'><b>loginUsingInvalidUser</b><br>Test class: ekbana.LoginCase</td>
+<td></td>
+<td>1</td>
+<td>ekbana.LoginCase@62ee68d8</td></tr>
 </table><p>
 </body>
 </html>
