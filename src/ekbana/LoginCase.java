@@ -37,5 +37,5 @@ public class LoginCase {
   public void loginUsingBlankUser() {
 	  page = new LoginPage(driver);
 	  page.doLogin("superqas", "superqa@1234");
-  }
+  } 
 }
