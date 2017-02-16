@@ -5,6 +5,8 @@
     <classes>
       <class name="testCase.LoginTestCases">
         <methods>
+          <include name="verifyUnregisteredAcount"/>
+          <include name="verifyValidPasswordAndEmail"/>
           <include name="verifyValidLogin"/>
         </methods>
       </class> <!-- testCase.LoginTestCases -->
