@@ -3,12 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="ekbana.LoginCase">
+      <class name="testCase.LoginTestCases">
         <methods>
-          <include name="setup"/>
-          <include name="loginUsingValidUser"/>
+          <include name="verifyValidLogin"/>
         </methods>
-      </class> <!-- ekbana.LoginCase -->
+      </class> <!-- testCase.LoginTestCases -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
